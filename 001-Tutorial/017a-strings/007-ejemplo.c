@@ -2,9 +2,9 @@
 
 int main()
 {
-    char grettings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+    char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
 
-    printf("%s", grettings);
+    printf("%s", greetings);
 
     return 0;
 }
