@@ -8,7 +8,7 @@ int main()
     fptr = fopen("filename.txt", "w");
 
     // Write some text to the file
-    fprintf(fptr, "Hello World");
+    fprintf(fptr, "Hello World!");
 
     // Close the file
     fclose(fptr);
