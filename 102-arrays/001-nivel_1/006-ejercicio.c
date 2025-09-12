@@ -9,15 +9,17 @@
 
 #include <stdio.h>
 
+#define MAX 10
+
 int main()
 {
-    int arreglo[10];
+    int arreglo[MAX];
     int sumatoria = 0;
     int promedio;
     int varianza;
 
     printf("Ingresa enteros entre 0 y 100, para llenar el arreglo:\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         do
         {
@@ -31,12 +33,12 @@ int main()
         sumatoria += arreglo[i];
     }
 
-    promedio = sumatoria / 10;
+    promedio = sumatoria / MAX;
     printf("La sumatoria es: %d\n", sumatoria);
     printf("El promedio es: %d\n", promedio);
 
     sumatoria = 0;
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         arreglo[i] = arreglo[i] - promedio;
         arreglo[i] = arreglo[i] * arreglo[i];

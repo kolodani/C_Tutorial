@@ -9,17 +9,19 @@
 
 #include <stdio.h>
 
+#define MAX 5
+
 void crear_arreglo(int*);
 
 int main()
 {
-    int arregloA[5], arregloB[5], suma[5];
+    int arregloA[MAX], arregloB[MAX], suma[MAX];
     printf("Ingrese los valores del arreglo A:\n");
     crear_arreglo(arregloA);
     printf("Ahora ingrese los valores del arreglo B:\n");
     crear_arreglo(arregloB);
     printf("El arreglo de la suma de los dos arreglos es:\n");
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < MAX; i++)
     {
         printf("%d, ", arregloA[i] + arregloB[i]);
     }
@@ -28,7 +30,7 @@ int main()
 
 void crear_arreglo(int *arreglo)
 {
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < MAX; i++)
     {
         printf("Ingrese el valor %d del arreglo: ", i + 1 );
         scanf("%d", &arreglo[i]);

@@ -11,21 +11,23 @@
 
 #include <stdio.h>
 
+#define MAX 10
+
 int main()
 {
-    int arreglo[10];
+    int arreglo[MAX];
     int positivos_pares = 0;
     int positivos_impares = 0;
     int negativos_pares = 0;
     int negativos_impares = 0;
     printf("Ingrese 10 valores para un arraglo:\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         printf("Valor %d del arreglo: ", i + 1);
         scanf("%d", &arreglo[i]);
     }
     printf("El arreglo terminado:\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         if (arreglo[i] % 2 == 0)
         {

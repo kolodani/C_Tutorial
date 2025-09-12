@@ -12,11 +12,13 @@
 
 #include <stdio.h>
 
+#define MAX 10
+
 void crear_arreglo(int*);
 
 int main()
 {
-    int arregloM[10], arregloN[10];
+    int arregloM[MAX], arregloN[MAX];
     int iguales = 0;
     int sumaM = 0, sumaN = 0;
 
@@ -26,7 +28,7 @@ int main()
     printf("Segundo arreglo:\n");
     crear_arreglo(arregloN);
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         sumaM += arregloM[i];
         sumaN += arregloN[i];
@@ -36,7 +38,7 @@ int main()
         }
     }
 
-    if (iguales == 10)
+    if (iguales == MAX)
     {
         printf("Los arreglos son iguales.\n");
     }
@@ -54,7 +56,7 @@ int main()
 
 void crear_arreglo(int *arreglo)
 {
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         do
         {

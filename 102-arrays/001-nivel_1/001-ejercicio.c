@@ -9,25 +9,27 @@
 
 #include <stdio.h>
 
+#define MAX 10
+
 int main()
 {
-    int arreglo[10];
+    int arreglo[MAX];
     arreglo[0]= 100;
     printf("Ingrese 10 enteros para completar el arreglo\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         do
         {
-            if (arreglo[i] > 10 || arreglo[i] < -10)
+            if (arreglo[i] > MAX || arreglo[i] < -MAX)
             {
                 printf("El valor tiene que estar entre -10 y 10.\n");
             }
             printf("Ingrese el valor en el arreglo[%d]: ", i + 1);
             scanf("%d", &arreglo[i]);
-        } while (arreglo[i] > 10 || arreglo[i] < -10);
+        } while (arreglo[i] > MAX || arreglo[i] < -MAX);
     }
     printf("El arreglo terminado:\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         printf("%d, ", arreglo[i]);
     }

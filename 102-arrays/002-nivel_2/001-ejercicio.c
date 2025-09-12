@@ -7,17 +7,19 @@
 
 #include <stdio.h>
 
+#define MAX 30
+
 int main()
 {
-    int arreglo[30];
+    int arreglo[MAX];
     printf("Ingrese los 30 valores del arreglo:\n");
-    for (int i = 0; i < 30; i++)
+    for (int i = 0; i < MAX; i++)
     {
         printf("Ingrese el valor %d de arreglo: ", i + 1);
         scanf("%d", &arreglo[i]);
     }
     printf("El arreglo listo: ");
-    for (int i = 0; i < 30; i++)
+    for (int i = 0; i < MAX; i++)
     {
         printf("%d, ", arreglo[i]);
     }

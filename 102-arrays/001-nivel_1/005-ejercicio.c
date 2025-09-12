@@ -7,14 +7,16 @@
 
 #include <stdio.h>
 
+#define MAX 10
+
 int main()
 {
-    float arreglo[10];
+    float arreglo[MAX];
     float sumatoria = 0.0;
     float promedio;
 
     printf("Ingrese los 10 valores flotantes del arreglo:\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         printf("Valor numero %d: ", i + 1);
         scanf("%f", &arreglo[i]);
@@ -23,7 +25,7 @@ int main()
 
     promedio = sumatoria / 10.0;
     printf("Los valores que estan sobre el promedio %f son:\n", promedio);
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         if (arreglo[i] > promedio)
         {

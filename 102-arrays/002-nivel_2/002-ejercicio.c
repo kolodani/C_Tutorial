@@ -9,11 +9,13 @@
 
 #include <stdio.h>
 
+#define MAX 10
+
 int armador_arreglos(int*);
 
 int main()
 {
-    int arregloA[10], arregloB[10];
+    int arregloA[MAX], arregloB[MAX];
     int paresA = 0, paresB = 0;
 
     printf("Ingrese los valores del arreglo A:\n");
@@ -41,7 +43,7 @@ int main()
 int armador_arreglos(int *arreglo)
 {
     int contador = 0;
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         printf("Ingrese el valor %d del arreglo: ", i + 1);
         scanf("%d", &arreglo[i]);

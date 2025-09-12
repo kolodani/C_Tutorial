@@ -42,7 +42,7 @@ int main()
 void imprimir_arreglo(int *arreglo)
 {
     printf("El arreglo: [");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAXIMO; i++)
     {
         printf("%d" ,arreglo[i]);
         if (i != 9)

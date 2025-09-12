@@ -13,13 +13,15 @@
 
 #include <stdio.h>
 
+#define MAX 15
+
 int main()
 {
-    int arregloA[15];
+    int arregloA[MAX];
     int pivote;
 
     printf("Ingresa valores al arreglo y yo los ire ordenando por ti:\n");
-    for (int i = 0; i < 15; i++)
+    for (int i = 0; i < MAX; i++)
     {
         printf("Ingresa el valor %d: ", i + 1);
         scanf("%d", &arregloA[i]);

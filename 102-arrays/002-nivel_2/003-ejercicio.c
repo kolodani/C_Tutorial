@@ -12,13 +12,15 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define MAX 10
+
 int main()
 {
-    int arregloA[10];
+    int arregloA[MAX];
     int pares = 0, impares = 0;
 
     srand(time(NULL));
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAX; i++)
     {
         arregloA[i] = rand() % 101;
         if (arregloA[i] % 2 == 0)
