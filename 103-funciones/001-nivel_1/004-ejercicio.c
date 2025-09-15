@@ -41,7 +41,6 @@ int main()
         resultado = a_pesos_chilenos(valor);
     }
 
-
     printf("Pasamos de %f a %f.\n", valor, resultado);
     return 0;
 }
