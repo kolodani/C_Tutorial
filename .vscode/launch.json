@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/kolodani/Documents/Repositorios/Cursos/C_Tutorial/001-Tutorial/002-Get_started_with_C",
-      "program": "/home/kolodani/Documents/Repositorios/Cursos/C_Tutorial/001-Tutorial/002-Get_started_with_C/build/Debug/outDebug",
+      "cwd": "/home/kolodani/Documents/Repositorios/Cursos/C_Tutorial/103-funciones/002-nivel_2",
+      "program": "/home/kolodani/Documents/Repositorios/Cursos/C_Tutorial/103-funciones/002-nivel_2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
