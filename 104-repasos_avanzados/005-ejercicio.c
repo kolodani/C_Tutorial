@@ -2,7 +2,7 @@
     PRACTICA 1
     NIVEL 1
     EJERCICIO 05:
-
+    DESCUBRIENDO PUNTEROS
 */
 
 #include <stdio.h>
@@ -11,8 +11,8 @@ int main()
 {
     int i = 8, *pi = &i;
     long long l = 8, *pl = &l;
-    float f = 102.8f, *pf=&f;
-    double d = 678.44, *pd=&d;
+    float f = 102.8f, *pf = &f;
+    double d = 678.44, *pd = &d;
     int vec[100];
     vec[0] = 44;
     printf("Variable int, tam.bytes = %d\tdir.&i: %p \tvalor: %d\n", sizeof(i), &i, i);

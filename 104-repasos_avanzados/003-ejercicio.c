@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 int verificar_tama();
-int** reservar_matriz(int);
+int **reservar_matriz(int);
 void completar_matriz(int **, int);
 void suma_matrices(int **, int **, int **, int);
 void mostar_matrices(int **, int);
@@ -53,7 +53,7 @@ int verificar_tama()
     return n;
 }
 
-int** reservar_matriz(int n)
+int **reservar_matriz(int n)
 {
     int **matriz = (int **)malloc(n * sizeof(int *));
     for (int i = 0; i < n; i++)
