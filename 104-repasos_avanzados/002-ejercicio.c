@@ -11,9 +11,11 @@
 int verificador();
 float **reservar_memoria(int, int);
 float *reservar_arreglo(int);
-void llenar_planilla(float**, int, int);
-void promedios(float**, float*, float*, int, int);
+void llenar_planilla(float **, int, int);
+void promedios(float **, float *, float *, int, int);
 void mostrar(float **, float *, float *, int, int);
+void liberar_memoria(int **, int);
+void liberar_arreglo(int *);
 
 int main()
 {
@@ -36,6 +38,10 @@ int main()
     printf("Veamos como queda la planilla:\n");
     mostrar(curricula, materiasProm, alumnosProm, materias, alumnos);
 
+    liberar_memoria(curricula, materias);
+    liberar_arreglo(alumnosProm);
+    liberar_arreglo(materiasProm);
+
     return 0;
 }
 
@@ -46,7 +52,7 @@ int verificador()
     {
         printf("> ");
         scanf("%d", &valor);
-        if(valor <= 0)
+        if (valor <= 0)
         {
             printf("Ingrese un valor mayor a cero.\n");
         }
@@ -115,4 +121,20 @@ void mostrar(float **arr, float *promM, float *promA, int mate, int alum)
     {
         printf("%.2f ", promA[i]);
     }
+}
+
+void liberar_memoria(int **arr, int t)
+{
+    for (int i = 0; i < t; i++)
+    {
+        free(arr[i]);
+    }
+    free(arr);
+    arr = NULL;
+}
+
+void liberar_arreglo(int *arr)
+{
+    free(arr);
+    arr = NULL;
 }
