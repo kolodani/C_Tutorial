@@ -14,8 +14,8 @@ float *reservar_arreglo(int);
 void llenar_planilla(float **, int, int);
 void promedios(float **, float *, float *, int, int);
 void mostrar(float **, float *, float *, int, int);
-void liberar_memoria(int **, int);
-void liberar_arreglo(int *);
+void liberar_memoria(float **, int);
+void liberar_arreglo(float *);
 
 int main()
 {
@@ -123,7 +123,7 @@ void mostrar(float **arr, float *promM, float *promA, int mate, int alum)
     }
 }
 
-void liberar_memoria(int **arr, int t)
+void liberar_memoria(float **arr, int t)
 {
     for (int i = 0; i < t; i++)
     {
@@ -133,7 +133,7 @@ void liberar_memoria(int **arr, int t)
     arr = NULL;
 }
 
-void liberar_arreglo(int *arr)
+void liberar_arreglo(float *arr)
 {
     free(arr);
     arr = NULL;
